@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahmoud Alwaly</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+/* ===== App ===== */
+.app{
+  width:360px;
+  background:#000;
+  border-radius:30px;
+  padding:30px 18px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* ===== Profile ===== */
+.profile{
+  position:relative;
+  width:150px;
+  height:150px;
+  margin:0 auto;
+}
+
+.profile::before{
+  content:"";
+  position:absolute;
+  inset:-10px;
+  border-radius:50%;
+  background:linear-gradient(45deg,#00ffcc,#0066ff,#00ffcc);
+  animation:rotate 3s linear infinite;
+  filter:blur(10px);
+  z-index:0;
+}
+
+.profile img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  position:relative;
+  z-index:1;
+  border:3px solid #000;
+}
+
+@keyframes rotate{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
+/* ===== Name ===== */
+.name{
+  color:#fff;
+  font-size:22px;
+  margin:15px 0;
+}
+
+/* ===== Small Icons ===== */
+.icons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.icons a{
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#111;
+  color:#fff;
+  font-size:18px;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.icons a:hover{
+  background:#00ffcc;
+  color:#000;
+  transform:scale(1.1);
+}
+
+/* ===== Big Links ===== */
+.link{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#111;
+  padding:14px;
+  margin:10px 0;
+  border-radius:12px;
+  text-decoration:none;
+  color:#fff;
+  transition:.3s;
+  font-size:14px;
+}
+
+.link:hover{
+  background:#00ffcc;
+  color:#000;
+  transform:scale(1.03);
+}
+
+/* Footer */
+.footer{
+  color:#666;
+  font-size:11px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- صورة -->
+  <div class="profile">
+    <img src="logo.jpeg">
+  </div>
+
+  <!-- اسم -->
+  <div class="name">Mahmoud Alwaly</div>
+
+  <!-- أيقونات صغيرة -->
+  <div class="icons">
+
+    <a href="https://www.facebook.com/share/17LExiVQg3/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+
+    <a href="https://www.instagram.com/mahmoud_alwaly?igsh=MXhnYzcxbjVoZXhyZQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+
+    <a href="https://www.tiktok.com/@mahmoudalwaly2?_r=1&_t=ZS-95aqqbYSnhw"><i class="fab fa-tiktok"></i></a>
+
+    <a href="https://t.me/mahmoud_alwaly"><i class="fab fa-telegram-plane"></i></a>
+
+  </div>
+
+  <!-- اللينكات تحت -->
+  <a class="link" href="https://www.facebook.com/share/17LExiVQg3/?mibextid=wwXIfr">
+    <span>Facebook</span>
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a class="link" href="https://www.instagram.com/mahmoud_alwaly?igsh=MXhnYzcxbjVoZXhyZQ%3D%3D&utm_source=qr">
+    <span>Instagram</span>
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a class="link" href="https://www.tiktok.com/@mahmoudalwaly2?_r=1&_t=ZS-95aqqbYSnhw">
+    <span>TikTok</span>
+    <i class="fab fa-tiktok"></i>
+  </a>
+
+  <a class="link" href="https://t.me/mahmoud_alwaly">
+    <span>Telegram</span>
+    <i class="fab fa-telegram-plane"></i>
+  </a>
+
+  <a class="link" href="https://wa.me/message/Y227U6USMAW6A1">
+    <span>WhatsApp</span>
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <div class="footer">© Mahmoud Alwaly 2026</div>
+
+</div>
+
+</body>
+</html>
